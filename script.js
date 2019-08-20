@@ -8,21 +8,23 @@ myApp.submitForm = function(){
             event.preventDefault();
             console.log(userName);
             $('.landingPage').addClass('hidePage');
+            $('main').removeClass('hideMain');
+            $('.mainHed').append(`<h1>Have you voted yet, ${userName}?</h1>`);
         }
         else {
             event.preventDefault();
-            $('form').append(`<h2>YOU NEED TO USE A NAME. COME ON. FOLLOW THE INSTRUCTIONS.</h2>`)
+            $('form').append(`<h3>YOU NEED TO USE A NAME. COME ON. FOLLOW THE INSTRUCTIONS.</h3>`)
         }
     })
     }
 
 
-// myApp.init = function(){
-//     myApp.submitForm();
-// }
+myApp.init = function(){
+    myApp.submitForm();
+}
 
 $(document).ready(function(){
-    myApp.submitForm();
+    myApp.init();
 })
 
 // set up a prompt asking for user's name on page load.

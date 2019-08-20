@@ -8,14 +8,33 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- This is the page users see when visiting. It will ask for a name, and then go display: none after they submit a valid name. -->
     <div class="landingPage">
+        <!-- this is the form asking them for their name -->
         <form>
             <label for="userName">Well, well, well, if it isn't ... Sorry, what was your name again?</label>
             <input type="text" class="landingPageinput" id="userName">
         </form>
     </div>
-    <main>
+    <!-- this is the markup for the main two buttons that users will interact with -->
+    <main class="hideMain">
+        <div>
+            <h2>The federal election is upon us.</h2>
+        </div>
+        <div class="mainHed">
+            
+        </div>
 
+        <div class="mainButtons">
+            <div class="button1">
+                <label for="yes">YES</label>
+                <input type="submit" id="yes" value=" ">
+            </div>
+            <div class="button2">
+                <label for="no">NO</label>
+                <input type="submit" id="no" value=" ">
+            </div>
+        </div>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

@@ -1,12 +1,25 @@
 .landingPage{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    input{
+        display: block;
+        width: 200px;
+    }
 }
+
+// .hideMain{
+//     display: none;
+// }
 
 .hidePage{
     display: none;
 }
+
+// .mainButtons input{
+//     height: 50vh;
+// }
