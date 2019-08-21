@@ -1,4 +1,13 @@
+
 .landingPage{
+    background: $maincolor;
+}
+
+.hidePage{
+    display: none;
+}
+
+.landingPageFlex{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -8,17 +17,19 @@
     height: 100vh;
     input{
         display: block;
-        width: 200px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    h1{
+        font-size: 3.5rem;
+        text-align: center;
+        width: 80%;
+    }
+    label{
+        font-size: 1.5rem;
     }
 }
 
-// .hideMain{
-//     display: none;
-// }
-
-.hidePage{
-    display: none;
-}
 
 // .mainButtons input{
 //     height: 50vh;

@@ -1,15 +1,15 @@
 
 
 myApp = {};
-myApp.submitForm = function(){
+myApp.submitLandingForm = function(){
     $('.landingPage form').on('submit', function(event){
         let userName = $('input').val();
         if (userName !== '') {
             event.preventDefault();
             console.log(userName);
             $('.landingPage').addClass('hidePage');
-            $('main').removeClass('hideMain');
-            $('.mainHed').append(`<h1>Have you voted yet, ${userName}?</h1>`);
+            $('div.hidePage').removeClass('hidePage');
+            $('.mainHed').append(`<h2>Right, of course. So, ${userName}, have you voted yet?</h2>`);
         }
         else {
             event.preventDefault();
@@ -20,11 +20,12 @@ myApp.submitForm = function(){
 
 
 myApp.init = function(){
-    myApp.submitForm();
+    myApp.submitLandingForm();
 }
 
 $(document).ready(function(){
     myApp.init();
+    let scroll = new SmoothScroll('a[href*="#"]');
 })
 
 // set up a prompt asking for user's name on page load.
