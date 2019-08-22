@@ -194,11 +194,15 @@ h1, h2, h3, h4 {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .landingPage {
   background: #c7f0db;
 }
 
-.hidePage {
+.hideLanding {
   display: none;
 }
 
@@ -238,7 +242,16 @@ h1, h2, h3, h4 {
   font-size: 1.5rem;
 }
 
+.hideMain {
+  display: none;
+}
+
 .masterDiv {
+  background: #8bbabb;
+  height: 100vh;
+}
+
+.flexMain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,8 +265,10 @@ h1, h2, h3, h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #8bbabb;
-  height: 100vh;
+}
+
+.mainHed {
+  font-size: 2rem;
 }
 
 .mainImage {
@@ -275,11 +290,29 @@ h1, h2, h3, h4 {
 
 .button1 input, .button2 input {
   padding: 5px;
-  width: 120px;
+  width: 150px;
   height: 80px;
   border-radius: 20px 20px 20px;
+  border: 2px solid tomato;
+  margin-top: 50px;
+}
+
+.hideQuiz {
+  display: none;
+}
+
+.yesQuestion1 {
+  height: 100vh;
 }
 
 .yesQuestion1 fieldset {
   border: none;
+}
+
+.yesQuestion1 legend {
+  font-size: 2rem;
+}
+
+.yesQuestion1 input {
+  display: block;
 }

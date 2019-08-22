@@ -1,15 +1,17 @@
 
 
 myApp = {};
+// this is the main function that takes users away from landing page
 myApp.submitLandingForm = function(){
     $('.landingPage form').on('submit', function(event){
         let userName = $('input').val();
         if (userName !== '') {
             event.preventDefault();
             console.log(userName);
-            $('.landingPage').addClass('hidePage');
-            $('div.hidePage').removeClass('hidePage');
+            $('.landingPage').addClass('hideLanding');
+            $('main').removeClass('hideMain');
             $('.mainHed').append(`<h2>Right, of course. So, ${userName}, have you voted yet?</h2>`);
+            $('.mainHed').append(`<h3>(Answer honestly. This choice has dire consequences, ${userName}.)</h3>`);
         }
         else {
             event.preventDefault();
@@ -17,10 +19,17 @@ myApp.submitLandingForm = function(){
         }
     })
     }
+    // this function is what happens when user either clicks yes or no on main page
+myApp.userPressedYes = function(event){
+    $('.mainButtons input.yesButton').on('click', function(){
+        $('.yesQuestion1').removeClass('hideQuiz');
+    })
+}
 
 
 myApp.init = function(){
     myApp.submitLandingForm();
+    myApp.userPressedYes()
 }
 
 $(document).ready(function(){

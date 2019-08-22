@@ -1,13 +1,22 @@
 
+.hideMain{
+    display: none
+}
 
+.masterDiv{	
+	background: $subcolor1;
+	height: 100vh;
+}
 
-.masterDiv{
+.flexMain{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;	
-	background: $subcolor1;
-	height: 100vh;
+	align-items: center;
+}
+
+.mainHed{
+	font-size: 2rem;
 }
 
 .mainImage{
@@ -28,20 +37,29 @@
 // the following code was generated from bestcssbuttongenerator.com. Many thanks to this finely named website.
 .button1 input, .button2 input {
 	padding: 5px;
-	width: 120px;
+	width: 150px;
 	height: 80px;
 	border-radius: 20px 20px 20px;
+	border: 2px solid tomato;
+	margin-top: 50px;
 }
 
 
 // styles for YES quiz, question 1
 
+.hideQuiz{
+	display: none;
+}
 .yesQuestion1{
+	height: 100vh;
 	fieldset{
 	border: none;
 	}
 	legend{
-	
+		font-size: 2rem;
+	}
+	input{
+		display: block;
 	}
 }
 

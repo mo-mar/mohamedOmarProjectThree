@@ -13,7 +13,7 @@
     <!-- This is the page users see when visiting. It will ask for a name, and then go display: none after they submit a valid name. -->
     <div class="landingPage">
         <div class="wrapper landingPageFlex">
-            <!-- this is the form asking them for their name -->
+            <!-- this is the landing page with a form asking them for their name -->
             <h1>It's ELECTION TIME in Canada. Oh yeah. Time to dust off that-</h1>
             <form>
                 <label for="userName">Oh, sorry. What was your name again?</label>
@@ -21,41 +21,42 @@
             </form>
         </div>
     </div>
-    <!-- this is the markup for the main two buttons that users will interact with -->
-    <div class="hidePage">
-        <main class="masterDiv">
-            <div class="mainHed">
-                
-            </div>
-            <div class="mainImage">
-                <img src="images/voting.jpg" alt="A voter places a ballot inside a box.">
-            </div> <!---Photo taken by Element5 Digital on Unsplash.-->
-            <div class="mainButtons">
-                <div class="button1" id="buttonAnchor">
-                    <label for="yes" class="visuallyhidden">YES</label>
-                    <input type="submit" id="yes" value="YES">
+    <!-- this is the markup for the section with main two buttons that users will interact with -->
+        <main class="masterDiv hideMain">
+            <div class="wrapper flexMain">
+                <div class="mainHed">
+                    
                 </div>
-                <div class="yesQuestion1 hidePage">
-                    <form action="">
-                        <fieldset>
-                            <legend>Well, look at you! Did you take a selfie at the polling station?</legend>
-                            <label for="yes1">Of course I did!</label>
-                            <input type="radio" name="yesQuiz1" id="yes1">
-                            <label for="no1">No, selfies are pain.</label>
-                            <input type="radio" id="no1" name="yesQuiz">
-                            <label for="yes1">I wanted to, but couldn't because the polling officer said ~PRIVACY~ is important.</label>
-                            <input type="radio" name="yesQuiz">
-                        </fieldset>
-                    </form>
-                </div>
-                <div class="button2">
-                    <label for="no" class="visuallyhidden">NO</label>
-                    <input type="submit" id="no" value="NO">
+                <div class="mainImage">
+                    <img src="images/voting.jpg" alt="A voter places a ballot inside a box.">
+                </div> <!---Photo taken by Element5 Digital on Unsplash.-->
+                <div class="mainButtons">
+                    <div class="button1" id="buttonAnchor">
+                        <label for="yes" class="visuallyhidden">Yes</label>
+                        <input type="submit" id="yes" value="YES" class="yesButton">
+                    </div>
+                    <div class="yesQuestion1 hideQuiz" id="yesQuiz1">
+                        <form action="">
+                            <fieldset>
+                                <legend>Well, look at you! Did you take a selfie at the polling station?</legend>
+                                <label for="yes1">Of course I did!</label>
+                                <input type="radio" name="yesQuiz1" id="yes1">
+                                <label for="no1">No, selfies are pain.</label>
+                                <input type="radio" id="no1" name="yesQuiz">
+                                <label for="yes1">I wanted to, but couldn't because the polling officer said ~PRIVACY~ is important.</label>
+                                <input type="radio" name="yesQuiz">
+                                <label for="submitYesQuiz1"></label>
+                                <input type="submit" id="submitYesQuiz1">
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="button2">
+                        <label for="no" class="visuallyhidden">NO</label>
+                        <input type="submit" id="no" value="NO">
+                    </div>
                 </div>
             </div>
         </main>
-    </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="script.js"></script>
