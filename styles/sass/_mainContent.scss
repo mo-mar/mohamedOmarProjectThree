@@ -6,6 +6,8 @@
 .masterDiv{	
 	background: $subcolor1;
 	height: 100vh;
+	
+	
 }
 
 .flexMain{
@@ -16,10 +18,11 @@
 }
 
 .mainHed{
-	font-size: 2rem;
+	font-size: 1.8rem;
 }
 
 .mainImage{
+	padding-top: 50px;
 	width: 50%;
 	img{
 		width: 100%;
@@ -27,14 +30,16 @@
 }
 
 .mainButtons{
-	width: 100%;
+	// padding-top: 200px;
+	width: 100vw;
 	display: flex;
 	justify-content: space-around;
+	background: $subcolor1;
+	padding-bottom: 100px;
+
 }
 
 
-
-// the following code was generated from bestcssbuttongenerator.com. Many thanks to this finely named website.
 .button1 input, .button2 input {
 	padding: 5px;
 	width: 150px;
@@ -45,21 +50,89 @@
 }
 
 
+
 // styles for YES quiz, question 1
 
-.hideQuiz{
-	display: none;
+.yes{
+	background: $subcolor3;
 }
 .yesQuestion1{
-	height: 100vh;
+	
+	form{
+		width: 100%;
+		padding-top: 150px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
 	fieldset{
-	border: none;
+		border: none;
+		width: 50%;
 	}
 	legend{
-		font-size: 2rem;
+		font-size:3rem;
+		text-align: center;
+		margin-bottom: 50px;
 	}
-	input{
+	input[type=radio]{
+		padding: 15px;
+		width: 50px;
+		
+	}
+	label{
+		font-size: 1.6rem;
 		display: block;
 	}
+
+	input[type=submit]{
+		margin: 50px auto;
+		width: 100px;
+		display: block;
+	}
+	
 }
+
+.no{
+	background: $subcolor4;
+}
+.noQuestion1{
+	color: white;
+	form{
+		width: 100%;
+		padding-top: 150px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	fieldset{
+		border: none;
+		width: 50%;
+	}
+	legend{
+		font-size:3rem;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	input[type=radio]{
+		padding: 15px;
+		width: 50px;
+		
+	}
+	label{
+		font-size: 1.6rem;
+		display: block;
+	}
+
+	input[type=submit]{
+		margin: 50px auto;
+		width: 100px;
+		display: block;
+	}
+	
+}
+
 

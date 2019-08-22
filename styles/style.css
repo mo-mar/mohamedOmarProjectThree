@@ -268,10 +268,11 @@ a {
 }
 
 .mainHed {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .mainImage {
+  padding-top: 50px;
   width: 50%;
 }
 
@@ -280,12 +281,14 @@ a {
 }
 
 .mainButtons {
-  width: 100%;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background: #8bbabb;
+  padding-bottom: 100px;
 }
 
 .button1 input, .button2 input {
@@ -297,22 +300,104 @@ a {
   margin-top: 50px;
 }
 
-.hideQuiz {
-  display: none;
+.yes {
+  background: #6c7b95;
 }
 
-.yesQuestion1 {
-  height: 100vh;
+.yesQuestion1 form {
+  width: 100%;
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .yesQuestion1 fieldset {
   border: none;
+  width: 50%;
 }
 
 .yesQuestion1 legend {
-  font-size: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.yesQuestion1 input {
+.yesQuestion1 input[type=radio] {
+  padding: 15px;
+  width: 50px;
+}
+
+.yesQuestion1 label {
+  font-size: 1.6rem;
+  display: block;
+}
+
+.yesQuestion1 input[type=submit] {
+  margin: 50px auto;
+  width: 100px;
+  display: block;
+}
+
+.no {
+  background: #464159;
+}
+
+.noQuestion1 {
+  color: white;
+}
+
+.noQuestion1 form {
+  width: 100%;
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.noQuestion1 fieldset {
+  border: none;
+  width: 50%;
+}
+
+.noQuestion1 legend {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.noQuestion1 input[type=radio] {
+  padding: 15px;
+  width: 50px;
+}
+
+.noQuestion1 label {
+  font-size: 1.6rem;
+  display: block;
+}
+
+.noQuestion1 input[type=submit] {
+  margin: 50px auto;
+  width: 100px;
   display: block;
 }

@@ -14,7 +14,7 @@
     <div class="landingPage">
         <div class="wrapper landingPageFlex">
             <!-- this is the landing page with a form asking them for their name -->
-            <h1>It's ELECTION TIME in Canada. Oh yeah. Time to dust off that-</h1>
+            <h1>It's ELECTION TIME in Canada. Oh yeah. Let's get ready to rum-</h1>
             <form>
                 <label for="userName">Oh, sorry. What was your name again?</label>
                 <input type="text" class="landingPageinput" id="userName">
@@ -35,30 +35,26 @@
                         <label for="yes" class="visuallyhidden">Yes</label>
                         <input type="submit" id="yes" value="YES" class="yesButton">
                     </div>
-                    <div class="yesQuestion1 hideQuiz" id="yesQuiz1">
-                        <form action="">
-                            <fieldset>
-                                <legend>Well, look at you! Did you take a selfie at the polling station?</legend>
-                                <label for="yes1">Of course I did!</label>
-                                <input type="radio" name="yesQuiz1" id="yes1">
-                                <label for="no1">No, selfies are pain.</label>
-                                <input type="radio" id="no1" name="yesQuiz">
-                                <label for="yes1">I wanted to, but couldn't because the polling officer said ~PRIVACY~ is important.</label>
-                                <input type="radio" name="yesQuiz">
-                                <label for="submitYesQuiz1"></label>
-                                <input type="submit" id="submitYesQuiz1">
-                            </fieldset>
-                        </form>
-                    </div>
                     <div class="button2">
                         <label for="no" class="visuallyhidden">NO</label>
-                        <input type="submit" id="no" value="NO">
+                        <input type="submit" id="no" value="NO" class="noButton">
                     </div>
                 </div>
             </div>
         </main>
+        <!-- this is what is generated if user clicks yes -->
+        <section class="yes">
+            <div class="wrapper">
+                <div class="yesQuestion1" id="yesQuiz1"></div>
+        </section>
+        <section class="no">
+            <div class="wrapper">
+                <div class="noQuestion1" id="noQuiz1"></div>
+            </div>
+        </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="confetti.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
