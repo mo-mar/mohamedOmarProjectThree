@@ -73,17 +73,24 @@ myApp.userPressedNo = function(event){
         $('input.noButton').off("click");
     })
 }
+
+myApp.yesResult = `<h2>Whoa! You've fulfilled your basic responsibilities as a citizen! Congratulations!</h2> <p>Why not go above and beyond and remind your friends to vote?`;
+
+
+
 myApp.showResult = function(){
     $('.yes').on('click', 'input#submitYesQuiz1', function(e){
         e.preventDefault();
         let userChoice = $('#yesQuiz1 input[type=radio][name=yesQuiz1]:checked').val();
         // console.log(userChoice);
-        if (userChoice == 'yes1'){
-            $()
+        if (userChoice === 'yes1'){
+            $('.yesResult1').css("height", "100vh").append(myApp.yesResult);
         }
-        
+        myApp.scrollTo("#yesResults")
     })
 }
+
+
 
 
 

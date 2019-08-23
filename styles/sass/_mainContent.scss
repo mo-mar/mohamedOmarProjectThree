@@ -98,6 +98,7 @@
 	
 }
 
+// styles for no quiz 
 .no{
 	background: $subcolor4;
 }
@@ -139,4 +140,26 @@
 	
 }
 
+
+// styles for result when user answers yes quiz
+
+.results{
+	background: $maincolor;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+	h2{
+		margin: 0;
+		padding-top: 20px;
+		font-size: 3rem;
+		margin-bottom: 50px;
+		
+	}
+	p{
+		font-size: 1.5rem;
+	}
+}
 
