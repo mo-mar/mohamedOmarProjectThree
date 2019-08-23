@@ -199,7 +199,9 @@ a {
 }
 
 .landingPage {
-  background: #c7f0db;
+  background: url("../images/parliament.jpg");
+  background-size: cover;
+  height: 100vh;
 }
 
 .hideLanding {
@@ -224,6 +226,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+}
+
+.landingPageFlex form {
+  background: rgba(255, 255, 0, 0.7);
 }
 
 .landingPageFlex input {

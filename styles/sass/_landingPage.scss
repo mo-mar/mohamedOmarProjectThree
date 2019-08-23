@@ -1,6 +1,8 @@
 
 .landingPage{
-    background: $maincolor;
+    background: url("../images/parliament.jpg");
+    background-size: cover;
+    height: 100vh;
 }
 
 .hideLanding{
@@ -15,6 +17,9 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    form{
+        background: rgba(255, 255, 0, 0.7);
+    }
     input{
         display: block;
         width: 100%;

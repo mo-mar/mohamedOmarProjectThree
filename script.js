@@ -62,10 +62,8 @@ myApp.userPressedYes = function(event){
 myApp.userPressedNo = function(event){
     $('.mainButtons input.noButton').on('click', function (event) {
         $('.noQuestion1').css("height", "100vh").append(myApp.noQuizQuestion1);
-        if ($('yesQuestion1').css("height", "100vh"){
-            $('yesQuestion1').hide();
-        })
         myApp.scrollTo("#noQuiz1");
+        $('input.noButton').off("click");
     })
 }
 
