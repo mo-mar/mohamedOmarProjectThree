@@ -202,6 +202,7 @@ a {
   background: url("../images/parliament.jpg");
   background-size: cover;
   height: 100vh;
+  width: 100%;
 }
 
 .hideLanding {
@@ -235,13 +236,23 @@ a {
 }
 
 .landingPageFlex h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
   width: 80%;
+  border: 1px solid black;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)));
+  background: linear-gradient(rgba(255, 255, 255, 0.7));
 }
 
 .landingPageFlex label {
   font-size: 1.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)));
+  background: linear-gradient(rgba(255, 255, 255, 0.7));
+  stroke: 2;
+}
+
+.landingPageFlex h3 {
+  color: white;
 }
 
 .hideMain {
@@ -424,19 +435,23 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   text-align: center;
 }
 
 .results h2 {
   margin: 0;
-  padding-top: 20px;
+  padding-top: 50px;
   font-size: 3rem;
   margin-bottom: 50px;
 }
 
 .results p {
   font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.results a {
+  margin-top: 20px;
 }
 
 .noResults a {

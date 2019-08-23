@@ -6,8 +6,6 @@
 .masterDiv{	
 	background: $subcolor1;
 	height: 100vh;
-	
-	
 }
 
 .flexMain{
@@ -145,23 +143,28 @@
 
 .results{
 	background: $maincolor;
-		display: flex;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
 	text-align: center;
 	h2{
 		margin: 0;
-		padding-top: 20px;
+		padding-top: 50px;
 		font-size: 3rem;
 		margin-bottom: 50px;
 		
 	}
 	p{
 		font-size: 1.5rem;
+		margin-bottom: 20px;
+	}
+	a{
+		margin-top: 20px;
 	}
 }
+
+
 
 // styles for result when user answers no quiz
 

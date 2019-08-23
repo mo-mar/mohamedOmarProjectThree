@@ -3,6 +3,7 @@
     background: url("../images/parliament.jpg");
     background-size: cover;
     height: 100vh;
+    width: 100%;
 }
 
 .hideLanding{
@@ -26,12 +27,21 @@
         margin-top: 20px;
     }
     h1{
-        font-size: 3.5rem;
+        font-size: 3rem;
         text-align: center;
         width: 80%;
+        border: 1px solid black;
+        background: linear-gradient(rgba(255, 255, 255, 0.7));
     }
     label{
         font-size: 1.5rem;
+        background: linear-gradient(rgba(255, 255, 255, 0.7));
+        stroke: 2
+
+    }
+    h3{
+        color: white;
+
     }
 }
 
