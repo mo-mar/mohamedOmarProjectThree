@@ -46,10 +46,25 @@
         <section class="yes">
             <div class="wrapper">
                 <div class="yesQuestion1" id="yesQuiz1"></div>
+                <audio id="taDa" preload="auto">
+                    <source src="sounds/taDa.mp3">
+                    </source>
+                </audio>
         </section>
+        <!-- this is what is generated if user clicks no -->
         <section class="no">
             <div class="wrapper">
                 <div class="noQuestion1" id="noQuiz1"></div>
+                <audio id="booSound" preload="auto">
+                    <source src="sounds/boo.mp3">
+                    </source>
+                </audio>
+            </div>
+        </section>
+        <!-- these are the divs that will be generated when user chooses their answer -->
+        <section class="results">
+            <div class="yesResults">
+                <div class="yesResult1"></div>
             </div>
         </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

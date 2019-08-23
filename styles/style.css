@@ -228,10 +228,6 @@ a {
   height: 100vh;
 }
 
-.landingPageFlex form {
-  background: rgba(255, 255, 0, 0.7);
-}
-
 .landingPageFlex input {
   display: block;
   width: 100%;
@@ -275,6 +271,11 @@ a {
 
 .mainHed {
   font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.mainHed h3 {
+  margin-bottom: 0;
 }
 
 .mainImage {
