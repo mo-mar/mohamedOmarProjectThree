@@ -41,6 +41,9 @@
         width: 200px;
         margin-top: 20px;
     }
+    input:focus{
+        border: 2px solid goldenrod;
+    }
     h1{
         font-size: 3rem;
         text-align: center;

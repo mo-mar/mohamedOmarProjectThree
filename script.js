@@ -110,6 +110,8 @@ myApp.yesQuizQuestion1 = `<form action=""><fieldset>
 myApp.noQuizQuestion1 = function(){
 return `<form action=""><fieldset>
                                 <legend>Uh, what? Did you just say you didn't vote, ${myApp.userName}?</legend>
+                                <video autoplay loop><source src="https://external-preview.redd.it/d7QmfSK_7C8t-jyOJue7mWloILc27WlBkd-60R4Ffi4.gif?format=mp4&s=afeb7dce4300d8fb55bf0f9b5ad33d579c72b43e"><p>Your browser doesn't support HTML5 video. Here is
+                                a <a href="https://external-preview.redd.it/d7QmfSK_7C8t-jyOJue7mWloILc27WlBkd-60R4Ffi4.gif?format=mp4&s=afeb7dce4300d8fb55bf0f9b5ad33d579c72b43e">link to the video</a> instead.</p></video>
                                 <div><input type="radio" name="noQuiz1" id="no1" value="noResponse1">
                                 <label for="no1">You heard me. I'm throwing my vote away.</label></div>
                                 <div><input type="radio" id="no2" name="noQuiz1" value="noResponse2">
@@ -141,13 +143,13 @@ myApp.yesResult3 = function(){
 myApp.noResult1 = function(){
     return `<h2 class="noResultDynamic">Your mother and I are extremely disappointed in you, ${myApp.userName}.</h2><p>It's not too late, so get out there and VOTE! You can find all the important information on what kind of ID you need and where to go below. GET TO IT!</p><a href="https://www.elections.ca/homeGE.aspx">Find all the info you need on the federal election here.</a>
 <a href="https://www.elections.ca/content2.aspx?section=reg&document=index&lang=e">Not sure if you're registered? Go here, POST HASTE.</a>
-<a href="https://www.elections.ca/homeGE.aspx">Want to know which riding your in? This tool is your friend.</a>`;
+<a href="https://www.elections.ca/homeGE.aspx">Want to know which riding you're in? This tool is your friend.</a>`;
 }
 
 myApp.noResult2 = function(){
     return `<h2>Too busy. Got it. OK. Makes sense.</h2><br><p>WHAT DO YOU MEAN YOU'RE TOO BUSY, ${myApp.userName} ? Get out there and VOTE! You can find all the info on what kind of ID you need and where to go below. GET TO IT!</p><a href="https://www.elections.ca/homeGE.aspx">Find all the info you need on the federal election here.</a>
 <a href="https://www.elections.ca/content2.aspx?section=reg&document=index&lang=e">Not sure if you're registered? Go here, POST HASTE.</a>
-<a href="https://www.elections.ca/homeGE.aspx">Want to know which riding your in? This tool is your friend.</a>`;
+<a href="https://www.elections.ca/homeGE.aspx">Want to know which riding you're in? This tool is your friend.</a>`;
 }
 
 myApp.noResult3 = function(){
@@ -155,7 +157,7 @@ myApp.noResult3 = function(){
 <p>You're just afraid of greatness, aren't you?
 Now get out there and VOTE! You can find all the info on what kind of ID you need and where to go below. GET TO IT!</p><a href="https://www.elections.ca/homeGE.aspx">Find all the info you need on the federal election here.</a>
 <a href="https://www.elections.ca/content2.aspx?section=reg&document=index&lang=e">Not sure if you're registered? Go here, POST HASTE.</a>
-<a href="https://www.elections.ca/homeGE.aspx">Want to know which riding your in? This tool is your friend.</a>`;
+<a href="https://www.elections.ca/homeGE.aspx">Want to know which riding you're in? This tool is your friend.</a>`;
 }
 
 myApp.init = function(){

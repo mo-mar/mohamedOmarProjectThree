@@ -265,6 +265,10 @@ a, a:visited {
   margin-top: 20px;
 }
 
+.landingPageFlex input:focus {
+  border: 2px solid goldenrod;
+}
+
 .landingPageFlex h1 {
   font-size: 3rem;
   text-align: center;
@@ -338,6 +342,12 @@ a, a:visited {
   }
 }
 
+@media (max-width: 600px) {
+  .mainHed h2 {
+    font-size: 1.9rem;
+  }
+}
+
 .mainImage {
   padding-top: 50px;
   width: 50%;
@@ -345,6 +355,18 @@ a, a:visited {
 
 .mainImage img {
   width: 100%;
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+  .mainImage {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainImage {
+    width: 70%;
+  }
 }
 
 .mainButtons {
@@ -355,17 +377,67 @@ a, a:visited {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background: #8bbabb;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   padding-top: 75px;
 }
 
 .button1 input, .button2 input {
   padding: 5px;
   width: 150px;
-  height: 80px;
+  height: 100px;
+  font-size: 2.3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   border-radius: 20px 20px 20px;
-  border: 2px solid tomato;
   margin-top: 50px;
+  -webkit-animation: flip-scale-down-ver 1s forwards;
+          animation: flip-scale-down-ver 1s forwards;
+  border-radius: 20px;
+  background: #c7f0db;
+}
+
+.button1 input:focus, .button2 input:focus {
+  border: 2px solid rebeccapurple;
+}
+
+.button1 input {
+  background: -webkit-gradient(linear, left bottom, left top, from(#22c1c3), to(#fdbb2d));
+  background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%);
+}
+
+.button2 input {
+  background: -webkit-gradient(linear, left top, right top, from(#b43a55), color-stop(54%, #fd1d1d), color-stop(54%, #fd211e), to(#fcb045));
+  background: linear-gradient(90deg, #b43a55 0%, #fd1d1d 54%, #fd211e 54%, #fcb045 100%);
+}
+
+@-webkit-keyframes flip-scale-down-ver {
+  0% {
+    -webkit-transform: scale(1) rotateY(0);
+    transform: scale(1) rotateY(0);
+  }
+  50% {
+    -webkit-transform: scale(0.4) rotateY(-90deg);
+    transform: scale(0.4) rotateY(-90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateY(-180deg);
+    transform: scale(1) rotateY(-180deg);
+  }
+}
+
+@keyframes flip-scale-down-ver {
+  0% {
+    -webkit-transform: scale(1) rotateY(0);
+    transform: scale(1) rotateY(0);
+  }
+  50% {
+    -webkit-transform: scale(0.4) rotateY(-90deg);
+    transform: scale(0.4) rotateY(-90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateY(-180deg);
+    transform: scale(1) rotateY(360deg);
+  }
 }
 
 .yes {
@@ -399,10 +471,34 @@ a, a:visited {
   width: 50%;
 }
 
+@media (min-width: 601px) and (max-width: 1023px) {
+  .yesQuestion1 fieldset {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .yesQuestion1 fieldset {
+    width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  .yesQuestion1 fieldset {
+    width: 80%;
+  }
+}
+
 .yesQuestion1 legend {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+  .yesQuestion1 legend {
+    font-size: 2.5rem;
+  }
 }
 
 .yesQuestion1 input[type=radio] {
@@ -427,6 +523,12 @@ a, a:visited {
 
 .no {
   background: #464159;
+}
+
+.no video {
+  width: 40%;
+  margin-bottom: 20px;
+  margin: 0 auto;
 }
 
 .noQuestion1 {
@@ -484,6 +586,40 @@ a, a:visited {
 
 .results {
   background: #c7f0db;
+}
+
+.results h2 {
+  margin: 0;
+  padding-top: 50px;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+  .results h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.results p {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+  .results p {
+    font-size: 1.6rem;
+  }
+}
+
+.results a.twitter-share-button, .results a {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  display: block;
+  color: rebeccapurple;
+}
+
+.yesResult1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,26 +636,24 @@ a, a:visited {
   text-align: center;
 }
 
-.results h2 {
-  margin: 0;
-  padding-top: 50px;
-  font-size: 3rem;
-  margin-bottom: 50px;
+.noResult1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
-.results p {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.results a.twitter-share-button, .results a {
-  margin-top: 20px;
-  font-size: 1.8rem;
-  display: block;
-  color: rebeccapurple;
-}
-
-p {
+footer p {
   margin: 0;
   background: #464159;
   text-align: center;

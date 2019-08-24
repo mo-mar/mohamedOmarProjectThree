@@ -31,6 +31,11 @@
 			
 		}
 	}
+	@include phone{
+		h2{
+			font-size: 1.9rem;
+		}
+	}
 }
 
 .mainImage{
@@ -38,6 +43,12 @@
 	width: 50%;
 	img{
 		width: 100%;
+	}
+	@include tablet{
+		width: 70%;
+	}
+	@include phone{
+		width: 70%;
 	}
 }
 
@@ -47,20 +58,42 @@
 	display: flex;
 	justify-content: space-around;
 	background: $subcolor1;
-	padding-bottom: 100px;
+	padding-bottom: 80px;
 	padding-top: 75px;
 
 }
 
-
 .button1 input, .button2 input {
 	padding: 5px;
 	width: 150px;
-	height: 80px;
+	height: 100px;
+	font-size: 2.3rem; 
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 	border-radius: 20px 20px 20px;
-	border: 2px solid tomato;
+	// border: 2px solid tomato;
 	margin-top: 50px;
+	animation: flip-scale-down-ver 1s forwards;
+	border-radius: 20px;
+	background: $maincolor;
 }
+
+.button1 input:focus, .button2 input:focus{
+	border: 2px solid rebeccapurple;
+}
+// gradients courtesy cssgradients.io
+.button1 input {
+	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.button2 input{
+	background: linear-gradient(90deg, rgba(180,58,85,1) 0%, rgba(253,29,29,1) 54%, rgba(253,33,30,1) 54%, rgba(252,176,69,1) 100%);
+}
+
+// animation courtesy animista.net
+
+@-webkit-keyframes flip-scale-down-ver{0%{-webkit-transform:scale(1) rotateY(0);transform:scale(1) rotateY(0)}50%{-webkit-transform:scale(.4) rotateY(-90deg);transform:scale(.4) rotateY(-90deg)}100%{-webkit-transform:scale(1) rotateY(-180deg);transform:scale(1) rotateY(-180deg)}}@keyframes flip-scale-down-ver{0%{-webkit-transform:scale(1) rotateY(0);transform:scale(1) rotateY(0)}50%{-webkit-transform:scale(.4) rotateY(-90deg);transform:scale(.4) rotateY(-90deg)}100%{-webkit-transform:scale(1) rotateY(-180deg);transform:scale(1) rotateY(360deg)}}
+
 
 
 
@@ -83,11 +116,24 @@
 	fieldset{
 		border: none;
 		width: 50%;
+		@include tablet{
+			width: 70%;
+		}
+		@include phone{
+			width: 70%;
+		}
+		@include smallPhone{
+			width: 80%;
+		}
 	}
 	legend{
 		font-size:3rem;
 		text-align: center;
 		margin-bottom: 50px;
+		@include phone{
+			font-size: 2.5rem;
+			
+		}
 	}
 	input[type=radio]{
 		// padding: 15px;
@@ -115,6 +161,11 @@
 // styles for no quiz 
 .no{
 	background: $subcolor4;
+	video{
+		width: 40%;
+		margin-bottom: 20px;
+		margin: 0 auto;
+	}
 }
 .noQuestion1{
 	color: white;
@@ -164,21 +215,21 @@
 
 .results{
 	background: $maincolor;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
 	h2{
 		margin: 0;
 		padding-top: 50px;
 		font-size: 3rem;
 		margin-bottom: 50px;
-		
+		@include tablet{
+			font-size: 2.5rem;
+		}
 	}
 	p{
 		font-size: 1.8rem;
 		margin-bottom: 20px;
+		@include tablet{
+			font-size: 1.6rem;
+		}
 	}
 	a.twitter-share-button, a{
 		margin-top: 20px;
@@ -188,9 +239,25 @@
 	}
 }
 
+.yesResult1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.noResult1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
 // footer
 
-p{
+footer p{
 	margin: 0;
 	background: $subcolor4;
 	text-align: center;
