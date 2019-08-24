@@ -194,13 +194,15 @@ h1, h2, h3, h4 {
   margin: 0 auto;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
 }
 
 .landingPage {
-  background: url("../images/parliament.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/parliament.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/parliament.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
 }
@@ -229,9 +231,25 @@ a {
   height: 100vh;
 }
 
+.landingPageFlex form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .landingPageFlex input {
   display: block;
-  width: 100%;
+  width: 200px;
   margin-top: 20px;
 }
 
@@ -239,16 +257,12 @@ a {
   font-size: 3rem;
   text-align: center;
   width: 80%;
-  border: 1px solid black;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)));
-  background: linear-gradient(rgba(255, 255, 255, 0.7));
+  color: white;
 }
 
 .landingPageFlex label {
   font-size: 1.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)));
-  background: linear-gradient(rgba(255, 255, 255, 0.7));
-  stroke: 2;
+  color: white;
 }
 
 .landingPageFlex h3 {
@@ -299,7 +313,7 @@ a {
 }
 
 .mainButtons {
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,6 +334,10 @@ a {
 
 .yes {
   background: #6c7b95;
+}
+
+.yesQuestion1 {
+  color: white;
 }
 
 .yesQuestion1 form {
@@ -352,13 +370,17 @@ a {
 }
 
 .yesQuestion1 input[type=radio] {
-  padding: 15px;
-  width: 50px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .yesQuestion1 label {
   font-size: 1.6rem;
-  display: block;
+  width: 40%;
+}
+
+.yesQuestion1 div {
+  margin-bottom: 20px;
 }
 
 .yesQuestion1 input[type=submit] {
@@ -405,13 +427,17 @@ a {
 }
 
 .noQuestion1 input[type=radio] {
-  padding: 15px;
-  width: 50px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .noQuestion1 label {
   font-size: 1.6rem;
-  display: block;
+  width: 40%;
+}
+
+.noQuestion1 div {
+  margin-bottom: 20px;
 }
 
 .noQuestion1 input[type=submit] {
@@ -454,7 +480,7 @@ a {
   margin-top: 20px;
 }
 
-.noResults a {
-  font-size: 1.8rem;
+.noResults a.twitter-share-button {
+  font-size: 2rem;
   display: block;
 }
