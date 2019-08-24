@@ -18,8 +18,18 @@
 .mainHed{
 	font-size: 1.8rem;
 	margin-bottom: 10px;
+	padding-top: 20px;
+	h2{
+		text-align: center;
+	}
 	h3{
 		margin-bottom: 0;
+	}
+	@include tablet {
+		h2{
+			font-size: 2.3rem;
+			
+		}
 	}
 }
 
@@ -38,6 +48,7 @@
 	justify-content: space-around;
 	background: $subcolor1;
 	padding-bottom: 100px;
+	padding-top: 75px;
 
 }
 
@@ -149,7 +160,7 @@
 }
 
 
-// styles for result when user answers yes quiz
+// styles for results section (both yes and no paths of quiz)
 
 .results{
 	background: $maincolor;
@@ -173,12 +184,17 @@
 		margin-top: 20px;
 		font-size: 1.8rem;
 		display: block;
+		color: rebeccapurple;
 	}
 }
 
+// footer
 
-
-// styles for result when user answers no quiz
-
+p{
+	margin: 0;
+	background: $subcolor4;
+	text-align: center;
+	color: white;
+}
 
 

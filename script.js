@@ -18,7 +18,8 @@ myApp.submitLandingForm = function () {
         }
     })
 }
-myApp.userName = $('.landingPage input[type=text').val();
+
+// myApp.userName = $('.landingPage input[type=text').val();
 
 // this is the smooth scroll function
 myApp.scrollTo = function (location) {
@@ -144,7 +145,7 @@ myApp.noResult1 = function(){
 }
 
 myApp.noResult2 = function(){
-    return `<h2>Too busy. Got it. OK. Makes sense. We all lead busy lives I suppo-</h2><br><p>WHAT DO YOU MEAN YOU'RE TOO BUSY, ${myApp.userName} ? Get out there and VOTE! You can find all the info on what kind of ID you need and where to go below. GET TO IT!</p><a href="https://www.elections.ca/homeGE.aspx">Find all the info you need on the federal election here.</a>
+    return `<h2>Too busy. Got it. OK. Makes sense.</h2><br><p>WHAT DO YOU MEAN YOU'RE TOO BUSY, ${myApp.userName} ? Get out there and VOTE! You can find all the info on what kind of ID you need and where to go below. GET TO IT!</p><a href="https://www.elections.ca/homeGE.aspx">Find all the info you need on the federal election here.</a>
 <a href="https://www.elections.ca/content2.aspx?section=reg&document=index&lang=e">Not sure if you're registered? Go here, POST HASTE.</a>
 <a href="https://www.elections.ca/homeGE.aspx">Want to know which riding your in? This tool is your friend.</a>`;
 }

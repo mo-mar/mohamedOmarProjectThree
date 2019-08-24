@@ -207,6 +207,12 @@ a, a:visited {
   width: 100%;
 }
 
+@media (min-width: 601px) and (max-width: 1023px) {
+  .landingPage {
+    background-position: 50% 0;
+  }
+}
+
 @media (max-width: 600px) {
   .landingPage {
     background-position: 50% 0;
@@ -315,10 +321,21 @@ a, a:visited {
 .mainHed {
   font-size: 1.8rem;
   margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+.mainHed h2 {
+  text-align: center;
 }
 
 .mainHed h3 {
   margin-bottom: 0;
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+  .mainHed h2 {
+    font-size: 2.3rem;
+  }
 }
 
 .mainImage {
@@ -339,6 +356,7 @@ a, a:visited {
       justify-content: space-around;
   background: #8bbabb;
   padding-bottom: 100px;
+  padding-top: 75px;
 }
 
 .button1 input, .button2 input {
@@ -498,4 +516,12 @@ a, a:visited {
   margin-top: 20px;
   font-size: 1.8rem;
   display: block;
+  color: rebeccapurple;
+}
+
+p {
+  margin: 0;
+  background: #464159;
+  text-align: center;
+  color: white;
 }
