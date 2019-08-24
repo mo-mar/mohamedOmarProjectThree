@@ -207,6 +207,12 @@ a, a:visited {
   width: 100%;
 }
 
+@media (max-width: 600px) {
+  .landingPage {
+    background-position: 50% 0;
+  }
+}
+
 .hideLanding {
   display: none;
 }
@@ -260,9 +266,21 @@ a, a:visited {
   color: white;
 }
 
+@media (max-width: 600px) {
+  .landingPageFlex h1 {
+    font-size: 2rem;
+  }
+}
+
 .landingPageFlex label {
   font-size: 1.5rem;
   color: white;
+}
+
+@media (max-width: 400px) {
+  .landingPageFlex label {
+    font-size: 1.2rem;
+  }
 }
 
 .landingPageFlex h3 {
@@ -472,15 +490,12 @@ a, a:visited {
 }
 
 .results p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
 }
 
-.results a {
+.results a.twitter-share-button, .results a {
   margin-top: 20px;
-}
-
-.noResults a.twitter-share-button {
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: block;
 }

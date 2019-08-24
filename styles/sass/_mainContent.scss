@@ -166,11 +166,13 @@
 		
 	}
 	p{
-		font-size: 1.5rem;
+		font-size: 1.8rem;
 		margin-bottom: 20px;
 	}
-	a{
+	a.twitter-share-button, a{
 		margin-top: 20px;
+		font-size: 1.8rem;
+		display: block;
 	}
 }
 
@@ -178,11 +180,5 @@
 
 // styles for result when user answers no quiz
 
-.noResults{
-	a.twitter-share-button{
-		font-size: 2rem;
-		display: block;
-	}
-	
-}
+
 

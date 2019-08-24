@@ -3,17 +3,18 @@
 const myApp = {};
 // this stores the user's name from the landing page
 
+
 myApp.submitLandingForm = function () {
     $('.landingPage form').on('submit', function (event) {
         event.preventDefault();
-        myApp.userName = $('.landingPage input[type=text').val();
+        myApp.userName = $('.landingPageinput').val();
         if (myApp.userName !== '') {
             $('.landingPage').addClass('hideLanding');
             $('main').removeClass('hideMain');
             $('.mainHed').append(`<h2>Right, of course. So, ${myApp.userName}, have you voted yet?</h2>`);
         }
         else if (myApp.userName == '') {
-            $('.warningMessage').html(`<h3>YOU NEED TO USE A NAME. COME ON. FOLLOW THE INSTRUCTIONS.</h3>`)
+            $('.warningMessage').html(`<h3>You need to use a name.</h3>`)
         }
     })
 }
