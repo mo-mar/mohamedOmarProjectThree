@@ -162,16 +162,15 @@
 .no{
 	background: $subcolor4;
 	video{
-		width: 40%;
-		margin-bottom: 20px;
-		margin: 0 auto;
+		width: 100%;
+		margin-bottom: 40px;
 	}
 }
 .noQuestion1{
 	color: white;
 	form{
 		width: 100%;
-		padding-top: 150px;
+		padding-top: 60px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

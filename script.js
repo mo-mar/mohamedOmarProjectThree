@@ -40,7 +40,7 @@ myApp.userPressedYes = function (event) {
 }
 myApp.userPressedNo = function (event) {
     $('.mainButtons input.noButton').on('click touch', function (event) {
-        $('.noQuestion1').css("height", "100vh").html(myApp.noQuizQuestion1);
+        $('.noQuestion1').html(myApp.noQuizQuestion1);
         myApp.scrollTo("#noQuiz1");
         let audio = $("#booSound")[0];
         audio.play();
@@ -154,8 +154,8 @@ myApp.noResult2 = function(){
 
 myApp.noResult3 = function(){
     return `<h2>Really, ${myApp.userName}? I know you don't mean that.</h2> 
-<p>You're just afraid of greatness, aren't you?
-Now get out there and VOTE! You can find all the info on what kind of ID you need and where to go below. GET TO IT!</p><a href="https://www.elections.ca/homeGE.aspx">Find all the info you need on the federal election here.</a>
+<p>You're just afraid of greatness, aren't you? It's OK. So am I.</p>
+<p>Now get out there and VOTE! You can find all the info on what kind of ID you need and where to go below. GET TO IT!</p><a href="https://www.elections.ca/homeGE.aspx">Find all the info you need on the federal election here.</a>
 <a href="https://www.elections.ca/content2.aspx?section=reg&document=index&lang=e">Not sure if you're registered? Go here, POST HASTE.</a>
 <a href="https://www.elections.ca/homeGE.aspx">Want to know which riding you're in? This tool is your friend.</a>`;
 }
