@@ -464,7 +464,7 @@ a, a:visited {
 
 .yesQuestion1 form {
   width: 100%;
-  padding-top: 300px;
+  padding-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,7 +556,7 @@ a, a:visited {
 
 .noQuestion1 form {
   width: 100%;
-  padding-top: 300px;
+  padding-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -726,14 +726,11 @@ a, a:visited {
 }
 
 footer {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
+  background: #464159;
 }
 
 footer p {
   margin: 0;
-  background: #464159;
   text-align: center;
   color: white;
 }

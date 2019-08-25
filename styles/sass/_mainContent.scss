@@ -114,7 +114,7 @@
 	color: white;
 	form{
 		width: 100%;
-		padding-top: 300px;
+		padding-top: 150px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -181,7 +181,7 @@
 	color: white;
 	form{
 		width: 100%;
-		padding-top: 300px;
+		padding-top: 150px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -297,16 +297,13 @@
 	}
 }
 
-// footer
-
 footer{
-	width: 100%;
-	position: fixed;
-	bottom: 0;
+		background: $subcolor4;
 }
+
+
 footer p{
 	margin: 0;
-	background: $subcolor4;
 	text-align: center;
 	color: white;
 	
