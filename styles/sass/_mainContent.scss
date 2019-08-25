@@ -58,6 +58,7 @@
 .mainButtons{
 	// padding-top: 200px;
 	width: 100%;
+
 	display: flex;
 	justify-content: space-around;
 	background: $subcolor1;
@@ -67,6 +68,7 @@
 	@include smallPhone{
 		padding-bottom: 60px;
 		padding-top: 35px;
+		width: 80%;
 	}
 
 }
@@ -258,6 +260,9 @@
 		@include tablet{
 			font-size: 2.5rem;
 		}
+		@include smallPhone{
+			font-size: 1.9rem;
+		}
 	}
 	p{
 		font-size: 1.8rem;
@@ -310,8 +315,7 @@
 	display: none;
 	width: 125px;
 	height: 60px;
-	margin: 0 auto;
-	margin-top: 20px;
+	margin: 50px auto 0 auto;
 	position: relative;
 	bottom: 50px;
 }

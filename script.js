@@ -65,7 +65,7 @@ myApp.showResultYes = function(){
             $('#yesQuiz1').append(`<span class="quizWarning">Choose something, you coward!</span>`);
         }
         if (userChoice === 'yes1'){
-            $('.yesResult1').css("height", "100vh").html(myApp.yesResult1);
+            $('.yesResult1').html(myApp.yesResult1);
             $('input.resetButton').css("display", "block");
             $('.results').css("padding-bottom", "25px");
         }
@@ -121,6 +121,8 @@ myApp.resetQuiz = function(){
             "margin-left": "50px",
         }).on("click touch");
         $('input.yesButton').css("display", "block").on("click touch");
+        $('.noQuizQuestion1').hide().html();
+        $('.yesQuizQuestion1').hide().html();
     })
 }
 

@@ -391,6 +391,7 @@ a, a:visited {
   .mainButtons {
     padding-bottom: 60px;
     padding-top: 35px;
+    width: 80%;
   }
 }
 
@@ -683,6 +684,12 @@ a, a:visited {
   }
 }
 
+@media (max-width: 400px) {
+  .results h2 {
+    font-size: 1.9rem;
+  }
+}
+
 .results p {
   font-size: 1.8rem;
   margin-bottom: 20px;
@@ -762,8 +769,7 @@ a, a:visited {
   display: none;
   width: 125px;
   height: 60px;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 50px auto 0 auto;
   position: relative;
   bottom: 50px;
 }
