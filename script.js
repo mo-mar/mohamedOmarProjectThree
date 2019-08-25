@@ -36,6 +36,8 @@ myApp.userPressedYes = function (event) {
         audio.play();
         myApp.scrollTo("#yesQuiz1");
         $('input.yesButton').off("click touch");
+        $('.mainButtons').css("justify-content", "center", "animation", "slide-right 2s forwards");
+        $('input.noButton').css("display", "none");
     })
 }
 myApp.userPressedNo = function (event) {
@@ -45,6 +47,8 @@ myApp.userPressedNo = function (event) {
         let audio = $("#booSound")[0];
         audio.play();
         $('input.noButton').off("click touch");
+        $('.mainButtons').css("justify-content", "center");
+        $('input.yesButton').css("display", "none");
     })
 }
 
@@ -66,7 +70,8 @@ myApp.showResultYes = function(){
             $('.yesResult1').css("height", "100vh").html(myApp.yesResult3);
         }
         $('input.yesButton').off("click touch");
-
+        $('.results').css("padding-bottom", "25px");
+        $('input.resetButton').css("display", "block");
         myApp.scrollTo("#yesResults")
 
     })
@@ -89,8 +94,16 @@ myApp.showResultNo = function() {
         if (userChoice === 'noResponse3') {
             $('.noResult1').css("height", "100vh").html(myApp.noResult3);
         }
-        $('input.noButton').off("click");
+        $('input.noButton').off("click touch");
         myApp.scrollTo("#noResults")
+    })
+}
+
+myApp.resetQuiz = function(){
+    $('input.resetButton').on('click', function(){
+        myApp.scrollTo(".mainHed");
+        $('input.noButton').css("display", "block", "padding-left", "90px").on("click touch");
+        $('input.yesButton').css("display", "block").on("click touch");
     })
 }
 
@@ -167,6 +180,7 @@ myApp.init = function(){
     myApp.userPressedNo();
     myApp.showResultYes();
     myApp.showResultNo();
+    myApp.resetQuiz();
 }
 
 $(document).ready(function(){

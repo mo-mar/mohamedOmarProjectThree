@@ -25,12 +25,12 @@
     <!-- this is the markup for the section with main two buttons that users will interact with -->
         <main class="masterDiv hideMain">
             <div class="wrapper flexMain">
-                <div class="mainHed">
-                    
+                <div class="mainHed">   
                 </div>
                 <div class="mainImage">
                     <img src="images/voting.jpg" alt="A voter places a ballot inside a box.">
                 </div> <!---Photo taken by Element5 Digital on Unsplash.-->
+                <!-- this is the div housing the two main buttons that users will interact with -->
                 <div class="mainButtons">
                     <div class="button1" id="buttonAnchor">
                         <label for="yes" class="visuallyhidden">Yes</label>
@@ -47,6 +47,7 @@
         <section class="yes" id="my-canvas">
             <div class="wrapper">
                 <div class="yesQuestion1" id="yesQuiz1"></div>
+                <!-- this is the sound that plays when user clicks yes -->
                 <audio id="taDa" preload="auto">
                     <source src="sounds/taDa.mp3">
                     </source>
@@ -57,6 +58,7 @@
         <section class="no">
             <div class="wrapper">
                 <div class="noQuestion1" id="noQuiz1"></div>
+                <!-- this is the sound that plays when user clicks no -->
                 <audio id="booSound" preload="auto">
                     <source src="sounds/boo.mp3">
                     </source>
@@ -73,16 +75,17 @@
                     <div class="noResult1">
                     </div>
                 </div>
+                <input type="submit" value="Reset Quiz" class="resetButton">
             </div>
         </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="script.js"></script>
     <footer>
         <div class="wrapper">
             <p>&copy; Mohamed Omar 2019</p>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 

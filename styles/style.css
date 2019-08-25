@@ -453,6 +453,28 @@ a, a:visited {
   }
 }
 
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+
 .yes {
   background: #6c7b95;
 }
@@ -523,6 +545,10 @@ a, a:visited {
 .yesQuestion1 input[type=radio] {
   display: inline-block;
   margin-right: 20px;
+}
+
+.yesQuestion1 input[type=radio]:focus {
+  border: 3px solid goldenrod;
 }
 
 .yesQuestion1 label {
@@ -722,6 +748,15 @@ a, a:visited {
   .noResult1 h2 {
     font-size: 2.3rem;
   }
+}
+
+.resetButton {
+  display: none;
+  width: 125px;
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 50px;
 }
 
 footer {
