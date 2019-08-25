@@ -303,7 +303,6 @@ a, a:visited {
 
 .masterDiv {
   background: #8bbabb;
-  height: 100vh;
 }
 
 .flexMain {
@@ -464,7 +463,7 @@ a, a:visited {
 
 .yesQuestion1 form {
   width: 100%;
-  padding-top: 150px;
+  padding-top: 225px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,7 +555,7 @@ a, a:visited {
 
 .noQuestion1 form {
   width: 100%;
-  padding-top: 150px;
+  padding-top: 225px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
