@@ -31,7 +31,7 @@ myApp.scrollTo = function (location) {
 // this function is what happens when user either clicks yes
 myApp.userPressedYes = function (event) {
     $('.mainButtons input.yesButton').on('click touch', function (event) {
-        $('.yesQuestion1').css("height", "100vh").html(myApp.yesQuizQuestion1);
+        $('.yesQuestion1').html(myApp.yesQuizQuestion1);
         let audio = $("#taDa")[0];
         audio.play();
         myApp.scrollTo("#yesQuiz1");

@@ -349,7 +349,7 @@ a, a:visited {
 }
 
 .mainImage {
-  padding-top: 50px;
+  padding-top: 20px;
   width: 50%;
 }
 
@@ -384,7 +384,15 @@ a, a:visited {
       justify-content: space-around;
   background: #8bbabb;
   padding-bottom: 80px;
+  margin-bottom: 30px;
   padding-top: 75px;
+}
+
+@media (max-width: 400px) {
+  .mainButtons {
+    padding-bottom: 60px;
+    padding-top: 35px;
+  }
 }
 
 .button1 input, .button2 input {
@@ -456,7 +464,7 @@ a, a:visited {
 
 .yesQuestion1 form {
   width: 100%;
-  padding-top: 150px;
+  padding-top: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,6 +478,12 @@ a, a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 600px) {
+  .yesQuestion1 form {
+    padding-top: 150px;
+  }
 }
 
 .yesQuestion1 fieldset {
@@ -542,7 +556,7 @@ a, a:visited {
 
 .noQuestion1 form {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,6 +570,12 @@ a, a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 600px) {
+  .noQuestion1 form {
+    padding-top: 150px;
+  }
 }
 
 .noQuestion1 fieldset {
@@ -705,12 +725,15 @@ a, a:visited {
   }
 }
 
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
 footer p {
   margin: 0;
   background: #464159;
   text-align: center;
   color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }

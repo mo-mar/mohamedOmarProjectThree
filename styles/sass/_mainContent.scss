@@ -39,7 +39,7 @@
 }
 
 .mainImage{
-	padding-top: 50px;
+	padding-top: 20px;
 	width: 50%;
 	img{
 		width: 100%;
@@ -62,7 +62,12 @@
 	justify-content: space-around;
 	background: $subcolor1;
 	padding-bottom: 80px;
+	margin-bottom: 30px;
 	padding-top: 75px;
+	@include smallPhone{
+		padding-bottom: 60px;
+		padding-top: 35px;
+	}
 
 }
 
@@ -109,11 +114,14 @@
 	color: white;
 	form{
 		width: 100%;
-		padding-top: 150px;
+		padding-top: 300px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		@include phone{
+			padding-top: 150px;
+		}
 	}
 	
 	fieldset{
@@ -173,11 +181,14 @@
 	color: white;
 	form{
 		width: 100%;
-		padding-top: 60px;
+		padding-top: 300px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		@include phone{
+			padding-top: 150px;
+		}
 	}
 	
 	fieldset{
@@ -288,14 +299,17 @@
 
 // footer
 
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
 footer p{
 	margin: 0;
 	background: $subcolor4;
 	text-align: center;
 	color: white;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
+	
 }
 
 
