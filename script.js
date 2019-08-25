@@ -1,6 +1,8 @@
 
 
 const myApp = {};
+
+
 // this stores the user's name from the landing page
 
 
@@ -19,8 +21,6 @@ myApp.submitLandingForm = function () {
     })
 }
 
-// myApp.userName = $('.landingPage input[type=text').val();
-
 // this is the smooth scroll function
 myApp.scrollTo = function (location) {
     $('html, body').animate({
@@ -28,7 +28,7 @@ myApp.scrollTo = function (location) {
     }, 800)
 }
 
-// this function is what happens when user either clicks yes
+// the following two functions are what happens when user either clicks yes or no.
 myApp.userPressedYes = function (event) {
     $('.mainButtons input.yesButton').on('click touch', function (event) {
         $('.yesQuestion1').html(myApp.yesQuizQuestion1);
@@ -51,6 +51,8 @@ myApp.userPressedNo = function (event) {
         $('input.yesButton').css("display", "none");
     })
 }
+
+// this is generated after the user finishes the YES quiz.
 
 myApp.showResultYes = function(){
     $('.yes').on('click touch', 'input#submitYesQuiz1', function(e){
@@ -84,6 +86,8 @@ myApp.showResultYes = function(){
     })
 }
 
+// this is generated after the user finishes the No quiz.
+
 myApp.showResultNo = function() {
     $('.no').on('click', 'input#submitNoQuiz1', function (e) {
         e.preventDefault();
@@ -112,6 +116,7 @@ myApp.showResultNo = function() {
     })
 }
 
+// this function operate the reset button that appears at the end of both the YES and NO paths. It scrolls the user up and display:blocks the two buttons back.
 
 myApp.resetQuiz = function(){
     $('input.resetButton').on('click', function(){
@@ -159,15 +164,15 @@ return `<form action=""><fieldset>
 // these are the three possible results in the YES path
 
 myApp.yesResult1 = function(){
-    return `<h2>Whoa! You've fulfilled your basic responsibilities as a citizen! Congratulations, ${myApp.userName}!</h2> <p>Why not go above and beyond and remind your friends to vote?</p><i class="fab fa-twitter"></i><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Whoa! I'm a responsible citizen, according to https://www.HaveYouVotedYet.ca!">Share this achievement on Twitter!</a>`;
+    return `<h2>Whoa! You've fulfilled your basic responsibilities as a citizen! Congratulations, ${myApp.userName}!</h2> <p>Why not go above and beyond and remind your friends to vote?</p><i class="fab fa-twitter" aria-hidden="true"></i><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Whoa! I'm a responsible citizen, according to https://www.HaveYouVotedYet.ca!">Share this achievement on Twitter!</a>`;
 }
 
 myApp.yesResult2 = function(){
-    return `<h2>Nice! You've fulfilled your basic responsibilities as a citizen.</h2><p>And if that wasn't enough, you also refuse to partake in social media trends! Congratulations, ${myApp.userName}!</p><p>Why not go above and beyond and remind your friends to vote?</p><i class="fab fa-twitter"></i><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Whoa! I'm a responsible citizen, according to https://www.HaveYouVotedYet.ca!">Share this achievement on Twitter!</a>`;
+    return `<h2>Nice! You've fulfilled your basic responsibilities as a citizen.</h2><p>And if that wasn't enough, you also refuse to partake in social media trends! Congratulations, ${myApp.userName}!</p><p>Why not go above and beyond and remind your friends to vote?</p><i class="fab fa-twitter" aria-hidden="true"></i><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Whoa! I'm a responsible citizen, according to https://www.HaveYouVotedYet.ca!">Share this achievement on Twitter!</a>`;
 }
 
 myApp.yesResult3 = function(){
-    return `<h2>Are you telling me you respect democracy <em>and</em> an individual's right to privacy?</h2> <p>Wow, ${myApp.userName}, you're a pillar of hope for society!</p><p>Why not go above and beyond and remind your friends to vote?</p><br><i class="fab fa-twitter"></i><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Whoa! I'm a responsible citizen, according to https://www.HaveYouVotedYet.ca!">Share this achievement on Twitter!</a>`;
+    return `<h2>Are you telling me you respect democracy <em>and</em> an individual's right to privacy?</h2> <p>Wow, ${myApp.userName}, you're a pillar of hope for society!</p><p>Why not go above and beyond and remind your friends to vote?</p><br><i class="fab fa-twitter" aria-hidden="true"></i><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Whoa! I'm a responsible citizen, according to https://www.HaveYouVotedYet.ca!">Share this achievement on Twitter!</a>`;
 }
 
 

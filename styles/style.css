@@ -703,6 +703,7 @@ a, a:visited {
 
 .results a.twitter-share-button, .results a {
   margin-top: 20px;
+  margin-bottom: 50px;
   font-size: 1.8rem;
   display: block;
   color: rebeccapurple;
