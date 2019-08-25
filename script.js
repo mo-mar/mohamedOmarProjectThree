@@ -94,6 +94,7 @@ myApp.showResultNo = function() {
     })
 }
 
+// this is a property containing markup for the first question in the YES path.
 myApp.yesQuizQuestion1 = `<form action=""><fieldset>
                                 <legend>Well, look at you! Did you take a selfie at the polling station?</legend>
                                 <div><input type="radio" name="yesQuiz1" id="yes1" value="yes1">

@@ -369,6 +369,12 @@ a, a:visited {
   }
 }
 
+@media (max-width: 400px) {
+  .mainImage {
+    width: 90%;
+  }
+}
+
 .mainButtons {
   width: 100%;
   display: -webkit-box;
@@ -557,10 +563,34 @@ a, a:visited {
   width: 50%;
 }
 
+@media (min-width: 601px) and (max-width: 1023px) {
+  .noQuestion1 fieldset {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .noQuestion1 fieldset {
+    width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  .noQuestion1 fieldset {
+    width: 80%;
+  }
+}
+
 .noQuestion1 legend {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+  .noQuestion1 legend {
+    font-size: 2.5rem;
+  }
 }
 
 .noQuestion1 input[type=radio] {
@@ -635,6 +665,16 @@ a, a:visited {
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .yesResult1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .yesResult1 h2 {
+    font-size: 2.3rem;
+  }
+}
+
 .noResult1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -652,9 +692,25 @@ a, a:visited {
   text-align: center;
 }
 
+@media (min-width: 601px) and (max-width: 1023px) {
+  .noResult1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .noResult1 h2 {
+    font-size: 2.3rem;
+  }
+}
+
 footer p {
   margin: 0;
   background: #464159;
   text-align: center;
   color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
