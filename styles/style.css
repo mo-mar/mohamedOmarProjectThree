@@ -658,6 +658,14 @@ a, a:visited {
   display: block;
 }
 
+.quizWarning {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  bottom: 15px;
+}
+
 .results {
   background: #c7f0db;
 }
@@ -755,6 +763,7 @@ a, a:visited {
   width: 125px;
   height: 60px;
   margin: 0 auto;
+  margin-top: 20px;
   position: relative;
   bottom: 50px;
 }

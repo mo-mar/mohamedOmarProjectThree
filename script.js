@@ -60,20 +60,27 @@ myApp.showResultYes = function(){
         myApp.yesResult3();
         console.log(myApp.userName);
         let userChoice = $('#yesQuiz1 input[type=radio][name=yesQuiz1]:checked').val();
+        if (userChoice == undefined) {
+            $('input#submitYesQuiz1').off("click");
+            $('#yesQuiz1').append(`<span class="quizWarning">Choose something, you coward!</span>`);
+        }
         if (userChoice === 'yes1'){
             $('.yesResult1').css("height", "100vh").html(myApp.yesResult1);
+            $('input.resetButton').css("display", "block");
+            $('.results').css("padding-bottom", "25px");
         }
         else if (userChoice === 'no1') {
             $('.yesResult1').css("height", "100vh").html(myApp.yesResult2);
+            $('input.resetButton').css("display", "block");
+            $('.results').css("padding-bottom", "25px");
         }
         else if (userChoice === 'yes2') {
             $('.yesResult1').css("height", "100vh").html(myApp.yesResult3);
+            $('input.resetButton').css("display", "block");
+            $('.results').css("padding-bottom", "25px");
         }
         $('input.yesButton').off("click touch");
-        $('.results').css("padding-bottom", "25px");
-        $('input.resetButton').css("display", "block");
         myApp.scrollTo("#yesResults")
-
     })
 }
 
@@ -84,25 +91,35 @@ myApp.showResultNo = function() {
         myApp.noResult2();
         myApp.noResult3();
         let userChoice = $('#noQuiz1 input[type=radio][name=noQuiz1]:checked').val();
-        console.log(userChoice);
-        if (userChoice === 'noResponse1') {
+        if (userChoice == undefined) {
+            $('input#submitNoQuiz1').off("click");
+            $('#noQuiz1').append(`<p class="quizWarning">Choose something, you coward!</p>`);
+        }
+        else if (userChoice === 'noResponse1') {
             $('.noResult1').css("height", "100vh").html(myApp.noResult1);
+            $('input.resetButton').css("display", "block");
         }
         else if (userChoice === 'noResponse2') {
             $('.noResult1').css("height", "100vh").html(myApp.noResult2);
+            $('input.resetButton').css("display", "block");
         }
-        if (userChoice === 'noResponse3') {
+        else if (userChoice === 'noResponse3') {
             $('.noResult1').css("height", "100vh").html(myApp.noResult3);
+            $('input.resetButton').css("display", "block");
         }
         $('input.noButton').off("click touch");
         myApp.scrollTo("#noResults")
     })
 }
 
+
 myApp.resetQuiz = function(){
     $('input.resetButton').on('click', function(){
         myApp.scrollTo(".mainHed");
-        $('input.noButton').css("display", "block", "padding-left", "90px").on("click touch");
+        $('input.noButton').css({
+            "display": "block",
+            "margin-left": "50px",
+        }).on("click touch");
         $('input.yesButton').css("display", "block").on("click touch");
     })
 }
