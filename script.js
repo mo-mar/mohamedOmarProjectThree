@@ -72,12 +72,12 @@ myApp.showResultYes = function(){
             $('.results').css("padding-bottom", "25px");
         }
         else if (userChoice === 'no1') {
-            $('.yesResult1').css("height", "100vh").html(myApp.yesResult2);
+            $('.yesResult1').html(myApp.yesResult2);
             $('input.resetButton').css("display", "block");
             $('.results').css("padding-bottom", "25px");
         }
         else if (userChoice === 'yes2') {
-            $('.yesResult1').css("height", "100vh").html(myApp.yesResult3);
+            $('.yesResult1').html(myApp.yesResult3);
             $('input.resetButton').css("display", "block");
             $('.results').css("padding-bottom", "25px");
         }
@@ -116,18 +116,17 @@ myApp.showResultNo = function() {
     })
 }
 
-// this function operate the reset button that appears at the end of both the YES and NO paths. It scrolls the user up and display:blocks the two buttons back.
+// this function operates the reset button that appears at the end of both the YES and NO paths. It scrolls the user up and display:blocks the two buttons back.
 
 myApp.resetQuiz = function(){
     $('input.resetButton').on('click', function(){
         myApp.scrollTo(".mainHed");
-        $('input.noButton').css({
+        $('input.noButton').on('click').css({
             "display": "block",
             "margin-left": "50px",
-        }).on("click touch");
-        $('input.yesButton').css("display", "block").on("click touch");
-        $('.noQuizQuestion1').hide().html();
-        $('.yesQuizQuestion1').hide().html();
+        })
+        $('input.yesButton').css("display", "block").on('click');
+        
     })
 }
 
