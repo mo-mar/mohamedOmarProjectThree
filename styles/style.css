@@ -410,6 +410,18 @@ a, a:visited {
   background: #c7f0db;
 }
 
+@media (max-width: 400px) {
+  .button1 input, .button2 input {
+    width: 100px;
+    height: 75px;
+  }
+}
+
+.button1 input:hover, .button2 input:hover {
+  -webkit-filter: contrast(80%);
+          filter: contrast(80%);
+}
+
 .button1 input:focus, .button2 input:focus {
   border: 2px solid rebeccapurple;
 }
@@ -486,7 +498,7 @@ a, a:visited {
 
 .yesQuestion1 form {
   width: 100%;
-  padding-top: 225px;
+  padding-top: 175px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,7 +594,7 @@ a, a:visited {
 
 .noQuestion1 form {
   width: 100%;
-  padding-top: 225px;
+  padding-top: 175px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -707,6 +719,10 @@ a, a:visited {
   font-size: 1.8rem;
   display: block;
   color: rebeccapurple;
+}
+
+.results .fa-twitter {
+  font-size: 2rem;
 }
 
 .yesResult1 {

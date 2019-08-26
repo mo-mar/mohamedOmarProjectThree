@@ -100,15 +100,15 @@ myApp.showResultNo = function() {
             $('#noQuiz1').append(`<p class="quizWarning">Choose something, you coward!</p>`);
         }
         else if (userChoice === 'noResponse1') {
-            $('.noResult1').css("height", "100vh").html(myApp.noResult1);
+            $('.noResult1').html(myApp.noResult1);
             $('input.resetButton').css("display", "block");
         }
         else if (userChoice === 'noResponse2') {
-            $('.noResult1').css("height", "100vh").html(myApp.noResult2);
+            $('.noResult1').html(myApp.noResult2);
             $('input.resetButton').css("display", "block");
         }
         else if (userChoice === 'noResponse3') {
-            $('.noResult1').css("height", "100vh").html(myApp.noResult3);
+            $('.noResult1').html(myApp.noResult3);
             $('input.resetButton').css("display", "block");
         }
         $('input.noButton').off("click touch");
@@ -180,13 +180,13 @@ myApp.yesResult3 = function(){
 
 myApp.noResult1 = function(){
     return `<h2 class="noResultDynamic">Your mother and I are extremely disappointed in you, ${myApp.userName}.</h2><p>It's not too late, so get out there and VOTE! You can find all the important information on what kind of ID you need and where to go below. GET TO IT!</p><a href="https://www.elections.ca/homeGE.aspx">Find all the info you need on the federal election here.</a>
-<a href="https://www.elections.ca/content2.aspx?section=reg&document=index&lang=e">Not sure if you're registered? Go here, POST HASTE.</a>
+<a href="https://www.elections.ca/content2.aspx?section=reg&document=index&lang=e">Not sure if you're registered to vote? Go here, POST HASTE.</a>
 <a href="https://www.elections.ca/homeGE.aspx">Want to know which riding you're in? This tool is your friend.</a>`;
 }
 
 myApp.noResult2 = function(){
     return `<h2>Too busy. Got it. OK. Makes sense.</h2><br><p>WHAT DO YOU MEAN YOU'RE TOO BUSY, ${myApp.userName} ? Get out there and VOTE! You can find all the info on what kind of ID you need and where to go below. GET TO IT!</p><a href="https://www.elections.ca/homeGE.aspx">Find all the info you need on the federal election here.</a>
-<a href="https://www.elections.ca/content2.aspx?section=reg&document=index&lang=e">Not sure if you're registered? Go here, POST HASTE.</a>
+<a href="https://www.elections.ca/content2.aspx?section=reg&document=index&lang=e">Not sure if you're registered to vote? Go here, POST HASTE.</a>
 <a href="https://www.elections.ca/homeGE.aspx">Want to know which riding you're in? This tool is your friend.</a>`;
 }
 
@@ -194,7 +194,7 @@ myApp.noResult3 = function(){
     return `<h2>Really, ${myApp.userName}? I know you don't mean that.</h2> 
 <p>You're just afraid of greatness, aren't you? It's OK. So am I.</p>
 <p>Now get out there and VOTE! You can find all the info on what kind of ID you need and where to go below. GET TO IT!</p><a href="https://www.elections.ca/homeGE.aspx">Find all the info you need on the federal election here.</a>
-<a href="https://www.elections.ca/content2.aspx?section=reg&document=index&lang=e">Not sure if you're registered? Go here, POST HASTE.</a>
+<a href="https://www.elections.ca/content2.aspx?section=reg&document=index&lang=e">Not sure if you're registered to vote? Go here, POST HASTE.</a>
 <a href="https://www.elections.ca/homeGE.aspx">Want to know which riding you're in? This tool is your friend.</a>`;
 }
 

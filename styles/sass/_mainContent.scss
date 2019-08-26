@@ -86,7 +86,17 @@
 	animation: flip-scale-down-ver 1s forwards;
 	border-radius: 20px;
 	background: $maincolor;
+	@include smallPhone{
+		width: 100px;
+		height: 75px;
+	}
 }
+
+.button1 input:hover, .button2 input:hover{
+		filter: contrast(80%);
+
+}
+
 
 .button1 input:focus, .button2 input:focus{
 	border: 2px solid rebeccapurple;
@@ -115,7 +125,7 @@
 	color: white;
 	form{
 		width: 100%;
-		padding-top: 225px;
+		padding-top: 175px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -185,7 +195,7 @@
 	color: white;
 	form{
 		width: 100%;
-		padding-top: 225px;
+		padding-top: 175px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -277,6 +287,10 @@
 		font-size: 1.8rem;
 		display: block;
 		color: rebeccapurple;
+	}
+
+	.fa-twitter{
+		font-size: 2rem;
 	}
 }
 
