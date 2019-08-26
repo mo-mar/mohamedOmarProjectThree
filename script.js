@@ -60,7 +60,6 @@ myApp.showResultYes = function(){
         myApp.yesResult1();
         myApp.yesResult2();
         myApp.yesResult3();
-        console.log(myApp.userName);
         let userChoice = $('#yesQuiz1 input[type=radio][name=yesQuiz1]:checked').val();
         if (userChoice == undefined) {
             $('input#submitYesQuiz1').off("click");
