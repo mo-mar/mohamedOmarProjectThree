@@ -120,6 +120,7 @@ myApp.showResultNo = function() {
 
 myApp.resetQuiz = function(){
     $('input.resetButton').on('click', function(){
+        location.reload()
         myApp.scrollTo(".mainHed");
         $('input.noButton').on('click').css({
             "display": "block",
