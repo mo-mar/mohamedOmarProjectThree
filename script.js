@@ -116,18 +116,11 @@ myApp.showResultNo = function() {
     })
 }
 
-// this function operates the reset button that appears at the end of both the YES and NO paths. It scrolls the user up and display:blocks the two buttons back.
+// this function operates the reset button that appears at the end of both the YES and NO paths. It resets the page back to the name input section
 
 myApp.resetQuiz = function(){
     $('input.resetButton').on('click', function(){
         location.reload()
-        myApp.scrollTo(".mainHed");
-        $('input.noButton').on('click').css({
-            "display": "block",
-            "margin-left": "50px",
-        })
-        $('input.yesButton').css("display", "block").on('click');
-        
     })
 }
 
